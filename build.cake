@@ -174,7 +174,7 @@ Task("Deploy")
 
         // Upload via curl and zip instead
         Zip("./output", "output.zip", "./output/**/*");
-        StartProcess("curl", "--header \"Content-Type: application/zip\" --header \"Authorization: Bearer " + token + "\" --data-binary \"@output.zip\" --url https://api.netlify.com/api/v1/sites/wyam.netlify.com/deploys");
+        StartProcess("curl", "--header \"Content-Type: application/zip\" --header \"Authorization: Bearer " + token + "\" --data-binary \"@output.zip\" --url https://api.netlify.com/api/v1/sites/wyam-riouwa.netlify.com/deploys");
     });
 
 //////////////////////////////////////////////////////////////////////
